@@ -55,8 +55,8 @@
                 impact!
             </p>
             <div class="h-stack">
-                <button class="btn-tertiary" type="submit">Donate</button>
-                <button class="btn-primary" type="submit">Volunteer</button>
+                <button class="button-tertiary" type="button" data-toggle="modal" data-target="#donate-modal">Donate</button>
+                <button class="button-primary" type="button">Volunteer</button>
             </div>
         </div>
         <img src="assets/who-we-are.png" alt="A diverse group of people interacting with each other in a store">
@@ -149,9 +149,29 @@
                     JUST Water, Fjallraven
                 </li>
             </ul>
-            <button class="btn-primary" type="submit">Donate</button>
+            <button class="button-primary" type="button" data-toggle="modal" data-target="#donate-modal">Donate</button>
         </div>
     </div>
+
+    <!-- Modal: Donate -->
+    <div class="modal fade" id="donate-modal" tabindex="-1" role="dialog" aria-labelledby="donationScreen" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Donate</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              We aren't accepting anymore donations right now, but thank you for your generosity!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="button-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 
 <footer>

@@ -45,7 +45,7 @@ b {
     flex-direction: row;
 }
 
-.btn-primary {
+.button-primary {
     background-color: var(--secondary);
     color: white;
     font-weight: 400;
@@ -55,32 +55,35 @@ b {
     border-radius: 12px;
 }
 
-.btn-primary:hover {
+.button-primary:hover {
     background-color: var(--secondary-hover);
 }
 
-.btn-secondary {
+.button-secondary {
     background-color: var(--tertiary);
     color: white;
     font-weight: 400;
 
     padding: 12px 24px 12px 24px;
     border: none;
+    border-radius: 12px;
 }
 
-.btn-secondary:hover {
+.button-secondary:hover {
     background-color: var(--tertiary-hover);
 }
 
-.btn-tertiary {
+.button-tertiary {
     background-color: transparent;
     color: white;
     font-weight: 400;
+
     padding: 12px 24px 12px 24px;
     border: none;
+    border-radius: 12px;
 }
 
-.btn-tertiary:hover {
+.button-tertiary:hover {
     opacity: 0.5;
 }
 
