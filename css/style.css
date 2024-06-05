@@ -264,6 +264,12 @@ nav button:hover {
     opacity: 0.8;
 }
 
+/* New Donation Modal */
+
+#new-donation-modal div button:first-child {
+    color: var(--black);
+}
+
 /* Footer */
 
 footer {

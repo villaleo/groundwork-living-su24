@@ -1,250 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Groundwork Living</title>
 
     <!-- Bootstrap CSS -->
     <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous"
-    >
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
     <!-- Social icons via Cloudflare -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<!-- Header + Navigation -->
-<header>
+  <!-- Header + Navigation -->
+  <header>
     <div class="h-stack with-margins">
-        <!-- Groundwork Living logo -->
-        <a href="">
-            <img id="header-logo" src="assets/logo-color.png" alt="Groundwork Living logo">
-        </a>
-        <!-- Groundwork Living text banner -->
-        <img id="header-text-banner" src="assets/logo-text-banner.png" alt="Groundwork Living text banner">
-        <!-- Navigation buttons -->
-        <nav>
-            <button id="nav-volunteer" role="navigation">Volunteer</button>
-            <button id="nav-resources" role="navigation">Resources</button>
-        </nav>
+      <!-- Groundwork Living logo -->
+      <a href="">
+        <img
+          id="header-logo"
+          src="assets/logo-color.png"
+          alt="Groundwork Living logo"
+        />
+      </a>
+      <!-- Groundwork Living text banner -->
+      <img
+        id="header-text-banner"
+        src="assets/logo-text-banner.png"
+        alt="Groundwork Living text banner"
+      />
+      <!-- Navigation buttons -->
+      <nav>
+        <button id="nav-volunteer" role="navigation">Volunteer</button>
+        <button id="nav-resources" role="navigation">Resources</button>
+      </nav>
     </div>
     <!-- Donation banner -->
     <div id="donation-banner">
-        <span>Make a Difference: Donate or Volunteer Today!</span>
+      <span>Make a Difference: Donate or Volunteer Today!</span>
     </div>
-</header>
+  </header>
 
-<body>
+  <body>
     <!-- Who We Are -->
     <div id="body-who-we-are" class="h-stack">
-        <div>
-            <h1>Build Lives, Plant Hope</h1>
-            <p>
-                We gratefully accept a variety of <b>donations</b>
-                to support our cause, from gently used clothing to essential
-                household items. Your monetary contributions are deeply
-                appreciated and can be via the provided button.
-                <br><br>
-                If donation isn't possible for you, consider
-                <b>volunteering</b> with us to create a meaningful
-                impact!
-            </p>
-            <div class="h-stack">
-                <button class="button-tertiary" type="button" data-toggle="modal" data-target="#donate-modal">Donate</button>
-                <button class="button-primary" type="button">Volunteer</button>
-            </div>
+      <div>
+        <h1>Build Lives, Plant Hope</h1>
+        <p>
+          We gratefully accept a variety of <b>donations</b>
+          to support our cause, from gently used clothing to essential household
+          items. Your monetary contributions are deeply appreciated and can be
+          via the provided button.
+          <br /><br />
+          If donation isn't possible for you, consider
+          <b>volunteering</b> with us to create a meaningful impact!
+        </p>
+        <div class="h-stack">
+          <button
+            class="button-tertiary"
+            type="button"
+            data-toggle="modal"
+            data-target="#new-donation-modal"
+          >
+            Donate
+          </button>
+          <button class="button-primary" type="button">Volunteer</button>
         </div>
-        <img src="assets/who-we-are.png" alt="A diverse group of people interacting with each other in a store">
+      </div>
+      <img
+        src="assets/who-we-are.png"
+        alt="A diverse group of people interacting with each other in a store"
+      />
     </div>
 
     <!-- Mission -->
     <div id="body-mission" class="with-margins">
-        <h2>Mission</h2>
-        <p>
-            Groundwork Living aims to offer a fresh start to those in need and
-            desiring change. Our goal at Groundwork Living is to provide a
-            solid foundation for living and growth. We provide temporary housing,
-            counseling, job placement assistance, access to a community garden
-            and kitchen, as well as clothing and hygiene necessities for
-            individuals experiencing homelessness. Our focus lies in teaching
-            individuals the essentials for leading a healthy life through a
-            holistic approach.
-        </p>
+      <h2>Mission</h2>
+      <p>
+        Groundwork Living aims to offer a fresh start to those in need and
+        desiring change. Our goal at Groundwork Living is to provide a solid
+        foundation for living and growth. We provide temporary housing,
+        counseling, job placement assistance, access to a community garden and
+        kitchen, as well as clothing and hygiene necessities for individuals
+        experiencing homelessness. Our focus lies in teaching individuals the
+        essentials for leading a healthy life through a holistic approach.
+      </p>
     </div>
 
     <!-- Values -->
     <div id="body-values" class="with-margins">
-        <h2>Values</h2>
-        <table>
-            <tr>
-                <th>
-                    <img src="assets/compassion.png" alt="Palm reached out with a heart over it">
-                </th>
-                <th>
-                    <img src="assets/community.png" alt="Three people in a circle with a heart over their heads">
-                </th>
-                <th>
-                    <img src="assets/hollistic-well-being.png" alt="A heart with a leaf and vitals">
-                </th>
-                <th>
-                    <img src="assets/education-empowerment.png" alt="An opened book with a fist sticking out of the pages">
-                </th>
-            </tr>
-            <tr>
-                <td><span>Compassion</span></td>
-                <td><span>Community</span></td>
-                <td><span>Hollistic Well-being</span></td>
-                <td><span>Education & Empowerment</span></td>
-            </tr>
-            <tr>
-                <td class="body-value-desc">
-                    Groundwork Living values the importance of community and
-                    connection, providing access to shared spaces like
-                    community gardens and kitchens to foster a sense of belonging
-                        and support.
-                </td>
-                <td class="body-value-desc">
-                Groundwork Living values the importance of community and
-                    connection, providing access to shared spaces like
-                    community gardens and kitchens to foster a sense of belonging
-                    and support.
-                </td>
-                <td class="body-value-desc">
-                    Groundwork Living prioritizes holistic well-being through
-                    housing, counseling, job placement, and access to essential
-                    resources, acknowledging health as physical, mental, and
-                    emotional.
-                </td>
-                <td class="body-value-desc">
-                    Groundwork Living values education and empowerment, focusing
-                    on teaching individuals essential life skills necessary for
-                    leading healthy and fulfilling lives.
-                </td>
-            </tr>
-        </table>
+      <h2>Values</h2>
+      <table>
+        <tr>
+          <th>
+            <img
+              src="assets/compassion.png"
+              alt="Palm reached out with a heart over it"
+            />
+          </th>
+          <th>
+            <img
+              src="assets/community.png"
+              alt="Three people in a circle with a heart over their heads"
+            />
+          </th>
+          <th>
+            <img
+              src="assets/hollistic-well-being.png"
+              alt="A heart with a leaf and vitals"
+            />
+          </th>
+          <th>
+            <img
+              src="assets/education-empowerment.png"
+              alt="An opened book with a fist sticking out of the pages"
+            />
+          </th>
+        </tr>
+        <tr>
+          <td><span>Compassion</span></td>
+          <td><span>Community</span></td>
+          <td><span>Hollistic Well-being</span></td>
+          <td><span>Education & Empowerment</span></td>
+        </tr>
+        <tr>
+          <td class="body-value-desc">
+            Groundwork Living values the importance of community and connection,
+            providing access to shared spaces like community gardens and
+            kitchens to foster a sense of belonging and support.
+          </td>
+          <td class="body-value-desc">
+            Groundwork Living values the importance of community and connection,
+            providing access to shared spaces like community gardens and
+            kitchens to foster a sense of belonging and support.
+          </td>
+          <td class="body-value-desc">
+            Groundwork Living prioritizes holistic well-being through housing,
+            counseling, job placement, and access to essential resources,
+            acknowledging health as physical, mental, and emotional.
+          </td>
+          <td class="body-value-desc">
+            Groundwork Living values education and empowerment, focusing on
+            teaching individuals essential life skills necessary for leading
+            healthy and fulfilling lives.
+          </td>
+        </tr>
+      </table>
     </div>
 
     <!-- Thank You -->
     <div id="body-thank-you" class="h-stack with-margins">
-        <img src="assets/thank-you.png" alt="Two people wearing construction gear and coordinating">
-        <div>
-            <h2>Thank You!</h2>
-            <p>
-                Deep appreciation goes out to our generous donors and steadfast
-                supporters!
-            </p>
-            <ul>
-                <li>
-                    Our Supporters: Emily Johnson, Michael Chen, Samantha Patel,
-                    David Thompson, Sarah Rodriguez, Jason Kim, Rachel Garcia,
-                    Matthew Nguyen, Lauren Smith, Christopher Martinez
-                </li>
-                <li>
-                    Out Donors: Cloud Paper, Better Way, Fruit of the Loom,
-                    JUST Water, Fjallraven
-                </li>
-            </ul>
-            <button class="button-primary" type="button" data-toggle="modal" data-target="#donate-modal">Donate</button>
-        </div>
+      <img
+        src="assets/thank-you.png"
+        alt="Two people wearing construction gear and coordinating"
+      />
+      <div>
+        <h2>Thank You!</h2>
+        <p>
+          Deep appreciation goes out to our generous donors and steadfast
+          supporters!
+        </p>
+        <ul>
+          <li>
+            Our Supporters: Emily Johnson, Michael Chen, Samantha Patel, David
+            Thompson, Sarah Rodriguez, Jason Kim, Rachel Garcia, Matthew Nguyen,
+            Lauren Smith, Christopher Martinez
+          </li>
+          <li>
+            Out Donors: Cloud Paper, Better Way, Fruit of the Loom, JUST Water,
+            Fjallraven
+          </li>
+        </ul>
+        <button
+          class="button-primary"
+          type="button"
+          data-toggle="modal"
+          data-target="#new-donation-modal"
+        >
+          Donate
+        </button>
+      </div>
     </div>
 
     <!-- Modal: Donate -->
-    <div class="modal fade" id="donate-modal" tabindex="-1" role="dialog" aria-labelledby="donationScreen" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Donate</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+    <div
+      class="modal fade"
+      id="new-donation-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="donationScreen"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New Donation</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Thank you so much for choosing to donate! Please fill out the form
+              below to get started.
+            </p>
+            <div
+              class="form-row form-check form-check-inline"
+              style="margin-left: 1px"
+            >
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="donation-form-no-name"
+              />
+              <label
+                class="form-check-label is-invalid"
+                for="donation-form-no-name"
+                >I do not want to provide a name.</label
+              >
             </div>
-            <div class="modal-body">
-              We aren't accepting anymore donations right now, but thank you for your generosity!
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="button-secondary" data-dismiss="modal">Close</button>
-            </div>
+            <br />
+            <form class="needs-validation" novalidate>
+              <fieldset id="donation-name-fieldset">
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="donation-form-first-name"
+                      placeholder="First name"
+                      value=""
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please provide a first name.
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="donation-form-last-name"
+                      placeholder="Last name"
+                      value=""
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please provide a last name.
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <label>Where are you from?</label>
+              <br />
+              <fieldset id="donation-location-fieldset">
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="donation-form-city"
+                      placeholder="City"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="donation-form-state"
+                      placeholder="State"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please provide a valid state.
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <label>Enter the amount you would like to donate.</label>
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">$</span>
+                    </div>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="donation-form-amount"
+                      placeholder="5"
+                      required
+                    />
+                    <div
+                      id="donation-form-amount-invalid-feedback"
+                      class="invalid-feedback"
+                    >
+                      Please enter an amount.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  id="donation-form-cancel-btn"
+                  type="button"
+                  class="btn button-tertiary"
+                  data-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button
+                  id="donation-form-submit-btn"
+                  type="submit"
+                  class="btn button-primary"
+                >
+                  Donate
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-</body>
-
-<footer>
-    <div class="with-margins">
-        <!-- Summary -->
-        <div id="footer-summary" class="h-stack">
-            <div>
-                <img src="assets/logo-bw.png" alt="Groundwork Living logo">
-                <p>
-                    Building Lives, Planting Hope: Groundwork Living - Where
-                    Fresh Starts Flourish
-                </p>
-            </div>
-            <table>
-                <tr>
-                    <th>Volunteer</th>
-                    <th>Resources</th>
-                    <th>Contact</th>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>Builder Basics</li>
-                            <li>Community Garden</li>
-                            <li>Community Kitchen</li>
-                            <li>Resources Closet</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Temporary Homes</li>
-                            <li>Community Food & Kitchen</li>
-                            <li>Necessity Packs</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>3101 Freedom Blvd, Watsonville, CA 95076</li>
-                            <li>(831) 467-324</li>
-                            <li>connect@gworkliving.com</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <hr>
-        <!-- Socials and Legal -->
-        <div id="footer-socials" class="h-stack">
-            <span>&copy;</span>
-            <span>2024 Groundwork Living, Inc. All rights reserved.</span>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-instagram"></a>
-        </div>
     </div>
-</footer>
+  </body>
 
-<script src="src/index.js"></script>
+  <footer>
+    <div class="with-margins">
+      <!-- Summary -->
+      <div id="footer-summary" class="h-stack">
+        <div>
+          <img src="assets/logo-bw.png" alt="Groundwork Living logo" />
+          <p>
+            Building Lives, Planting Hope: Groundwork Living - Where Fresh
+            Starts Flourish
+          </p>
+        </div>
+        <table>
+          <tr>
+            <th>Volunteer</th>
+            <th>Resources</th>
+            <th>Contact</th>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>Builder Basics</li>
+                <li>Community Garden</li>
+                <li>Community Kitchen</li>
+                <li>Resources Closet</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Temporary Homes</li>
+                <li>Community Food & Kitchen</li>
+                <li>Necessity Packs</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>3101 Freedom Blvd, Watsonville, CA 95076</li>
+                <li>(831) 467-324</li>
+                <li>connect@gworkliving.com</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <hr />
+      <!-- Socials and Legal -->
+      <div id="footer-socials" class="h-stack">
+        <span>&copy;</span>
+        <span>2024 Groundwork Living, Inc. All rights reserved.</span>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+    </div>
+  </footer>
 
-<!-- Bootstrap JavaScript scripts -->
-<script
+  <script src="src/index.js"></script>
+
+  <!-- Bootstrap JavaScript scripts -->
+  <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous">
-</script>
-<script
+    crossorigin="anonymous"
+  ></script>
+  <script
     src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous">
-</script>
-<script
+    crossorigin="anonymous"
+  ></script>
+  <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous">
-</script>
+    crossorigin="anonymous"
+  ></script>
 </html>
